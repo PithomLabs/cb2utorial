@@ -1,0 +1,7 @@
+OPENROUTER_API_KEY=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
+LLM_MODEL=kwaipilot/kat-coder-pro:free
+MAX_FILE_SIZE=1048576
+MAX_FILES=100
+INCLUDE_PATTERNS=*.go,*.py,*.js,*.ts,*.md
+EXCLUDE_PATTERNS=*_test.go,vendor/*,node_modules/*,.git/*
+OUTPUT_DIR=./tutorial
