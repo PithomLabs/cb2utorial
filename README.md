@@ -43,6 +43,12 @@ curl -X POST http://localhost:9070/deployments \\
   -d '{"uri": "http://localhost:9082"}'
 ```
 
+Or using the Restate UI:
+
+```
+http://localhost:9070/ui/overview
+```
+
 This tells the Restate server about your service and its handlers.
 
 ### 4. Invoke the Workflow
@@ -69,6 +75,12 @@ curl -X POST http://localhost:9070/TutorialWorkflow/Run \\
 Create a `.env` file:
 ```
 OPENROUTER_API_KEY=your_api_key_here
+LLM_MODEL=your_llm_model_here (e.g. z-ai/glm-4.5-air:free)
+MAX_FILE_SIZE=1048576
+MAX_FILES=100
+INCLUDE_PATTERNS=*.go,*.py,*.js,*.ts,*.md
+EXCLUDE_PATTERNS=*_test.go,vendor/*,node_modules/*,.git/*
+OUTPUT_DIR=./tutorial
 ```
 
 ## How It Works
